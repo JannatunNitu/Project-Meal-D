@@ -1,0 +1,526 @@
+/* Common css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items{
+    align-items: center;
+}
+.align-items2{
+    align-items: flex-end;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif ;
+}
+:root{
+    --MainColor:#ffece1;
+    --PrimaryColor:#649483;
+    --SecondaryColor:#dd7017;
+    --PrimaryFont:'Open Sans', sans-serif ;
+    --BannerHeight:895px;
+}
+.button{
+    color: var(--MainColor);
+    background-color: var(--PrimaryColor);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18.75px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+.button:hover{
+    color: var(--PrimaryColor);
+    background-color: transparent;
+    border: 2px solid var(--PrimaryColor);
+    padding: 10px 20px;
+}
+.heading{
+    font-size: 111.64px;
+    font-weight: 700;
+    color:var(--SecondaryColor);
+    padding-bottom: 10px;  
+    text-transform: capitalize; 
+}
+.para{
+    color: var(--MainColor);
+    font-size: 17.32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.subheading{
+    font-size: 18.64px;
+    font-weight: 700;
+    color: var(--PrimaryColor);
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: 18.81px;
+    font-weight: 400;
+    color: var(--PrimaryColor);
+    text-align: justify;
+    padding: 10px 40px 45px 0;
+}
+/* Common css ends here */
+
+/* Navbar starts here */
+nav{
+    background-color: var(--MainColor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    position: relative;
+}
+nav .logo{
+    width: 25%;
+}
+nav .menu{
+    width: 45%;
+}
+nav .ordermeal{
+    width: 30%;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: var(--PrimaryColor);
+    text-transform: capitalize;
+    padding: 55px 21px;
+    display: block;
+    font-size: 18.75px;
+    font-weight: 400;
+}
+nav .ordermeal .icon{
+    color: var(--PrimaryColor);
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0 15px;
+}
+/* Navbar ends here */
+
+/* Banner section starts here */
+#banner{
+    background-image: url(../Image/Meal\ Plans\ banner.png);
+    background-position: center;
+    background-size: cover;
+    height:885px ;
+    padding: 135px 0 65px 0;
+}
+#banner .banner-img{
+    width: 45%;
+    text-align: center;
+}
+#banner .banner-img img{
+    width: 100%;
+}
+#banner .banner-img h4{
+    color: var(--PrimaryColor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: -20px;
+}
+#banner .banner-img p{
+    color: var(--PrimaryColor);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#banner .bannerheading{
+    width: 55%;
+    padding-left: 30px;
+}
+/* #banner .bannerheading .row{
+    height:885px ;
+} */
+#banner .bannerheading h2{
+    font-size: 112px;
+}
+.bannerheading .overlay{
+    background-color: var(--SecondaryColor);
+    margin-top: 75px;  
+    border-bottom-left-radius: 30px; 
+    border-top-left-radius: 30px; 
+    padding: 20px 15px ;
+}
+.bannerheading .overlay .over-meal{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--MainColor);
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(deg270);
+    width: 10%;
+    text-align: center;
+    padding-left: 20px;
+}
+.bannerheading .overlay .optn{
+    width: 20%;
+    text-align: center;
+}
+.bannerheading .overlay .optn4{
+    width: 25%;
+    text-align: center;
+    margin-left: -10px;
+}
+.bannerheading .overlay .arrow{
+    width: 5%;
+}
+.overlay .optn p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--MainColor);
+    padding-top: 20px;
+}
+.overlay .optn4 p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--MainColor);
+    padding-top: 20px;
+}
+.overlay .arrow{
+    color: var(--MainColor);
+    font-size: 35px;
+    text-align: right;
+}
+/* Banner section ends here */
+
+/* Favourite section starts here */
+#favourite{
+    padding: 80px 0;
+    background-color: var(--PrimaryColor);
+}
+#favourite .heading{
+    color: var(--MainColor);
+}
+#favourite .fav-content{
+    width: calc(33.33% - 25px);
+    margin: 0 12.5px;
+    background-color: var(--MainColor);
+    padding: 72px 0 92px 0;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+#favourite .fav-content img{
+    width: 100%;
+    display: block;
+}
+.fav-content .fav-heading{
+    font-size: 18.8px;
+    font-weight: 700;
+    color: var(--PrimaryColor);
+    text-transform: uppercase;
+    padding: 0 80px 35px 80px;
+}
+.fav-content .fav-para{
+    font-size:18.8px ;
+    font-weight: 400;
+    color: var(--PrimaryColor);
+    text-transform: capitalize;
+    padding: 0 40px;
+    margin-top: -24px;
+}
+/* Favourite section ends here */
+
+/* What they say section starts here */
+#say{
+    background-color: var(--PrimaryColor);
+    padding: 100px 0 150px 0;
+}
+#say h2{
+    color: var(--MainColor);
+}
+#say .client-review{
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    margin-top: 115px;
+    text-align: center;
+}
+#say .client-review h4{
+    font-size: 17.32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--MainColor);
+    padding: 35px 0 30px 0;
+}
+#say .client-review p{
+    font-size: 18.81px;
+    font-weight: 400;
+    color: var(--MainColor);
+    padding: 0 20px;
+}
+/* What they say section ends here */
+
+/* Mealplan section starts here */
+#meal{
+    padding: 115px 0;
+    background-color: var(--MainColor);
+}
+#meal .mealimg{
+    width: 40%;
+}
+#meal .mealimg img{
+    width: 100%;
+    display: block;
+}
+#meal .meal-text{
+    width: 60%;
+    padding-left: 80px;
+}
+
+.meal-text .content{
+    width: calc(50% - 25px);
+    margin:0 12.5px;
+    position: relative;
+}
+.meal-text .content img{
+    width: 100%;
+    display: block;
+}
+.meal-text .content .overlay{
+    bottom: -5%;
+    transform: translateY(5%);
+    left: 0;
+    position: absolute;
+}
+.content .overlay p{
+    color: var(--MainColor);
+}
+/* Mealplan section ends here */
+
+/* Recipes section starts here */
+#recipe{
+    background-color: var(--MainColor);
+    padding: 115px 0;
+}
+#recipe .meal-text{
+    width: 60%;
+    padding-right: 40px;
+}
+#recipe .content{
+    width: calc(50% - 25px);
+    margin: 0 12.5px;
+    margin-top: 40px;
+    /* margin-right:20px ; */
+}
+#recipe .content:nth-child(3){
+    margin-top: 40px;
+}
+#recipe .content:nth-child(4){
+    margin-top: 40px;
+}
+#recipe .recipes{
+    width: 40%;
+}
+#recipe .recipes img{
+    width: 100%;
+    display:block;
+}
+/* Recipes section ends here */
+
+/* Process section starts here */
+#process{
+    background-color: var(--PrimaryColor);
+    padding: 115px 0;
+}
+#process h2{
+    color: var(--MainColor);
+}
+#process .pro{
+    font-size: 17.32px;
+    font-weight: 700;
+    color: var(--MainColor);
+    text-transform: uppercase;
+    padding: 5px 0 70px 0;
+}
+#process .process-content{
+    width:26.66%;
+    background-color:var(--MainColor);
+    padding:45px 35px 30px 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+#process .pro-icon{
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+#process .pro-icon span{
+    top: 50%;
+    left: 45px;
+    position: absolute;
+    font-size: 30px;
+    color: var(--MainColor);
+    transform: translateY(-50%);
+}
+#process .process-content h4{
+    font-size: 29.17px;
+    font-weight: 700;
+    color: var(--SecondaryColor);
+    text-transform: uppercase;
+}
+#process .process-content p{
+    font-size: 18.77px;
+    font-weight: 400;
+    color: var(--SecondaryColor);
+    
+}
+#process .process-content img{
+    padding: 70px 0;
+}
+/* Process section ends here */
+
+/* You love section starts here */
+#love{
+    background-image: url(../Image/love\ journey.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#love .content-text{
+    padding: 235px 0 295px 0;
+    width: 80%;
+}
+#love .content-text h2{
+    padding-right: 300px;
+}
+#love .content-text p{
+    padding-right: 350px;
+}
+#love .text{
+    width: 20%;
+    text-align: right;
+    padding: 80px 0 0 0;
+}
+#love .text h4{
+    color: var(--MainColor);
+    padding-top: 25px;
+}
+#love .text a{
+    color: var(--MainColor);
+    font-size: 24px;
+}
+/* You love section ends here */
+
+/* Made section starts here */
+#made{
+    background-image: url(../Image/journey.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 370px 0 285px 0;
+}
+#made .made-text{
+    text-align: center;
+    padding: 0 200px;
+}
+#made .made-text p{
+    padding: 0 80px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 19px;
+}
+/* Made section ends here */
+
+/* Footer section starts here */
+footer{
+    background-color: var(--PrimaryColor);
+    padding: 185px 0 125px 0;
+    width: 100%;
+}
+.info .services{
+    width: 25%;
+}
+.info .team{
+    width: 25%;
+}
+.info .legal{
+    width: 20%;
+}
+.info .newsletter{
+    width:30%;
+}
+.footer-head{
+    font-size: 24.51px;
+    color: var(--MainColor);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.list li{
+   font-size: 18.8px;
+   padding-bottom:20px ;
+}
+.list li a{
+    color: var(--MainColor);
+}
+.info .newsletter p{
+    font-size: 18.8px;
+    color: var(--MainColor);
+}
+.newsletter input{
+    width: 315px;
+    height: 45px;
+    color: var(--PrimaryColor);
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    border: 2px solid var(--MainColor);
+    font-size: 18.78px;
+    font-weight: 400;
+    padding-left: 15px;
+    color: var(--MainColor);
+}
+::placeholder{
+    color: var(--MainColor);
+}
+.newsletter .button{
+    background-color: var(--MainColor);
+    color: var(--PrimaryColor);
+
+}
+footer .socialicons{
+    padding-top: 135px;
+}
+footer .socialicons p{
+    font-size: 18.79px;
+    color: var(--MainColor);
+}
+.socialicons .icon-text{
+    width: 80%;   
+}
+.socialicons .icon-text p{
+    font-size: 18.79px;
+    font-weight: 700;
+    color: var(--MainColor);
+}
+.socialicons .icons{
+    width: 20%;
+}
+.socialicons ul{
+    text-align: right;
+}
+.socialicons ul li{
+    display: inline-block;
+}
+.socialicons ul li a{
+    color: var(--MainColor);
+    font-size: 30px;
+    padding: 0 10px;
+}
+/* Footer section ends here */
